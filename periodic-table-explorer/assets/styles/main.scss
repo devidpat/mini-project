@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: 20rem 10rem;
+    padding: 2rem;
+}
+
+.periodic-table-container{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.periodic-table-container div{
+    border: 1px solid black;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.elements-class{
+    color: black;
+    font-weight: bold;
+}
+
+.elements-class:hover{
+    transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.number{
+    position: relative;
+    bottom: 2rem;
+    right: 0.8rem;
+    font-size: x-small;
+}
+
+.symbol{
+    font-size: large;
+}
+
+.name{
+    font-size: xx-small;
+}
+
+.atomic-mass{
+    position: relative;
+    bottom: 3.3rem;
+    left: 1.8rem;
+    font-size: x-small;
+}
+
+.card-container{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 700px;
+    height: 550px;
+    background-color: rgba(19, 0, 32, 0.692);
+    display: block;
+    border-radius: 10px;
+    display: none;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card-container p{
+    margin-top: 2rem;
+}
+
+.close{
+    position: absolute;
+    left: 95%;
+    top: 1%;
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    .container{
+        width: 300px;
+        margin: 1rem 5rem;
+        padding: 0.5rem;
+    }
+
+    .periodic-table-container{
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    
+    .periodic-table-container div{
+        border: 1px solid black;
+        width: 10px;
+        height: 10px;
+        // padding: 0.3rem;
+    }
+
+    .number{
+        position: relative;
+        bottom: 2rem;
+        right: 0.8rem;
+        font-size: xx-small;
+    }
+    
+    .symbol{
+        font-size: large;
+    }
+    
+    .name{
+        font-size: xx-small;
+    }
+    
+    .atomic-mass{
+        position: relative;
+        bottom: 3.3rem;
+        left: 1.8rem;
+        font-size: x-small;
+    }
+    
+    .card-container{
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        width: 700px;
+        height: 550px;
+        background-color: rgba(19, 0, 32, 0.692);
+        display: block;
+        border-radius: 10px;
+        display: none;
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .card-container p{
+        margin-top: 2rem;
+    }
+    
+    .close{
+        position: absolute;
+        left: 95%;
+        top: 1%;
+        cursor: pointer;
+    }
+}
