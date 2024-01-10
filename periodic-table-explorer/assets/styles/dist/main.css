@@ -5,21 +5,26 @@
 }
 
 .container {
-  width: 1200px;
-  margin: 20rem 10rem;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 1rem;
+  overflow: hidden;
 }
 
 .periodic-table-container {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(9, 1fr);
+  overflow: hidden;
 }
 
 .periodic-table-container div {
   border: 1px solid black;
-  padding: 1rem;
+  padding: 0rem;
   cursor: pointer;
+  min-width: 4rem;
 }
 
 .elements-class {
@@ -36,37 +41,45 @@
 
 .number {
   position: relative;
-  bottom: 2rem;
-  right: 0.8rem;
+  top: -1.2rem;
+  left: 0.5rem;
   font-size: x-small;
 }
 
 .symbol {
   font-size: large;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
 }
 
 .name {
-  font-size: xx-small;
+  font-size: 8px;
+  position: relative;
+  left: 0.5rem;
+  overflow: hidden;
+  top: 0.5rem;
 }
 
 .atomic-mass {
   position: relative;
-  bottom: 3.3rem;
-  left: 1.8rem;
+  bottom: 2.4rem;
+  left: 2rem;
   font-size: x-small;
 }
 
+.element-image {
+  width: 20vw;
+  height: 20vh;
+}
+
 .card-container {
-  position: absolute;
-  top: 25%;
-  left: 35%;
-  width: 700px;
-  height: 550px;
-  background-color: rgba(19, 0, 32, 0.692);
+  width: 100vw;
+  height: 10vh;
   display: block;
   border-radius: 10px;
   display: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: x-large;
   font-weight: bold;
   text-align: center;
@@ -84,63 +97,53 @@
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  .container {
-    width: 300px;
-    margin: 1rem 5rem;
-    padding: 0.5rem;
+.element-props {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 3rem;
+}
+
+.search-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#search::placeholder {
+  text-align: start;
+  padding-left: 1rem;
+}
+
+.list-card {
+  width: 20vw;
+}
+
+@media (max-width: 2250px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .periodic-table-container {
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+}
+@media (max-width: 1480px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .periodic-table-container div {
     border: 1px solid black;
-    width: 10px;
-    height: 10px;
-  }
-  .number {
-    position: relative;
-    bottom: 2rem;
-    right: 0.8rem;
-    font-size: xx-small;
-  }
-  .symbol {
-    font-size: large;
-  }
-  .name {
-    font-size: xx-small;
-  }
-  .atomic-mass {
-    position: relative;
-    bottom: 3.3rem;
-    left: 1.8rem;
-    font-size: x-small;
-  }
-  .card-container {
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    width: 700px;
-    height: 550px;
-    background-color: rgba(19, 0, 32, 0.692);
-    display: block;
-    border-radius: 10px;
-    display: none;
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-    text-align: center;
-    padding: 2rem;
-  }
-  .card-container p {
-    margin-top: 2rem;
-  }
-  .close {
-    position: absolute;
-    left: 95%;
-    top: 1%;
     cursor: pointer;
+    min-width: 1.5rem;
   }
 }

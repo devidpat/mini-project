@@ -13,10 +13,16 @@
       href="../assets//styles/dist/main.css"
     />
     <script src="../assets//scripts//jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
     <script src="../assets//scripts/main.js"></script>
   </head>
   <body>
-    <h1 style="text-align: center">Periodic Table</h1>
+    <div class="head">
+      <h1>Periodic Table</h1>
+    <div class="search-container">
+      <input type="search" id="search" placeholder="Search an Element">
+    </div>
+    </div>
     <div class="element-props">
       <div style="max-width: 20vw; display: flex; justify-content:start; align-items: center;">
         <div style="width: 2rem; height: 2rem; margin: 1rem 1rem; background-color: rgba(226, 255, 71, 0.8); border: 0.2px solid black;"></div>
@@ -47,6 +53,14 @@
       <div style="max-width: 20vw; display: flex; justify-content:start; align-items: center;">
         <div style="width: 2rem; height: 2rem; margin: 1rem 1rem; background-color: rgba(150, 71, 255, 0.8); border: 0.2px solid black;"></div>
         <span>Alkaline Earth Metal</span>
+      </div>
+      <div style="max-width: 20vw; display: flex; justify-content:start; align-items: center;">
+        <div style="width: 2rem; height: 2rem; margin: 1rem 1rem; background-color: rgba(211, 15, 255, 0.7); border: 0.2px solid black;"></div>
+        <span>Lanthanoid</span>
+      </div>
+      <div style="max-width: 20vw; display: flex; justify-content:start; align-items: center;">
+        <div style="width: 2rem; height: 2rem; margin: 1rem 1rem; background-color: rgba(35, 0, 255, 0.8); border: 0.2px solid black;"></div>
+        <span>Actinoid</span>
       </div>
     </div>
     <main class="container">

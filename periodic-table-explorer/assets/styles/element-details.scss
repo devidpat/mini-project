@@ -1,0 +1,49 @@
+img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.name{
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+
+}
+
+.desc, .name{
+    margin: 0 1rem;
+    background-color: red($color: #000000);
+    width: auto;
+    border-radius: 5px;
+}
+
+.desc p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.name p{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.atomic-details{
+    background-color: red;
+    max-width: 16rem;
+    max-height: 12rem;
+    padding: 2rem;
+}
+
+.atomic-details p{
+    font-weight: bold;
+}
+model-viewer{
+    width: 200px;
+    height: 200px;
+}
