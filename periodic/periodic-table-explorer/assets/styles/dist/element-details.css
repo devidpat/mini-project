@@ -1,0 +1,69 @@
+img {
+  width: 20rem;
+  height: 20rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.desc,
+.name {
+  margin: 0 1rem;
+  background-color: 0;
+  width: auto;
+  border-radius: 5px;
+}
+
+.desc p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.name p {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.atomic-details,
+.right-details {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  max-width: 16rem;
+  max-height: 12rem;
+  padding: 2rem;
+}
+
+.atomic-details p {
+  font-weight: bold;
+}
+
+model-viewer {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 40vh;
+  left: 24vw;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-details {
+  min-width: 16rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.right-details a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

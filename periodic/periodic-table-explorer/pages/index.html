@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="../assets//styles/dist/main.css" />
+		<script src="../assets//scripts//jquery-3.7.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+		<script src="../assets/scripts/main.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-container">
+				<ul>
+					<li><a href="#">CybageLearning</a></li>
+					<div class="menus">
+            <li><a href="./index.html">Chemistry</a></li>
+					<li><a href="./geography.html">Geography</a></li>
+					<li><a href="./contactus.html">Contact us</a></li>
+          </div>
+				</ul>
+			</div>
+		</nav>
+		<div class="head">
+			<h1>Periodic Table</h1>
+			<div class="search-container">
+				<input type="search" id="search" placeholder="Search an Element" />
+			</div>
+		</div>
+		<div class="element-props">
+			<div
+				style="
+					max-width: 20vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(226, 255, 71, 0.8);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Alkali Metals</span>
+			</div>
+			<div
+				style="
+					max-width: 20vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(254, 105, 44, 0.3);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Diatomic Nonmetals</span>
+			</div>
+			<div
+				style="
+					max-width: 20vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(108, 198, 6, 0.3);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Noble Gas</span>
+			</div>
+			<div
+				style="
+					max-width: 20vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(255, 71, 219, 0.8);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Metalloid</span>
+			</div>
+			<div
+				style="
+					max-width: 20vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(181, 36, 55, 0.8);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Polyatomic Non Metal</span>
+			</div>
+			<div
+				style="
+					max-w20th: 15vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(125, 181, 36, 0.8);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Post Transition Metal</span>
+			</div>
+			<div
+				style="
+					max-w20th: 15vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(49, 138, 255, 0.8);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Transition Metal</span>
+			</div>
+			<div
+				style="
+					max-width: 20vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(150, 71, 255, 0.8);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Alkaline Earth Metal</span>
+			</div>
+			<div
+				style="
+					max-width: 20vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(211, 15, 255, 0.7);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Lanthanoid</span>
+			</div>
+			<div
+				style="
+					max-width: 20vw;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+				"
+			>
+				<div
+					style="
+						width: 2rem;
+						height: 2rem;
+						margin: 1rem 1rem;
+						background-color: rgba(35, 0, 255, 0.8);
+						border: 0.2px solid black;
+					"
+				></div>
+				<span>Actinoid</span>
+			</div>
+		</div>
+		<main class="container">
+			<div class="periodic-table-container" id="periodic-table-container"></div>
+		</main>
+		<div class="card-container"></div>
+	</body>
+</html>

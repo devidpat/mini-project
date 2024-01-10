@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  background-color: black;
+  width: 100%;
+  height: 8vh;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+
+}
+.menus{
+  min-width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li a {
+  text-decoration: none;
+    color: white;
+    margin-top: 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 1rem;
+  overflow: hidden;
+  //   padding: 1rem;
+}
+
+.periodic-table-container {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+//   grid-auto-flow: column;
+  overflow: hidden;
+}
+
+.periodic-table-container div {
+  border: 1px solid black;
+  padding: 0rem;
+  cursor: pointer;
+  min-width: 4rem;
+}
+
+.elements-class {
+  color: black;
+  font-weight: bold;
+}
+
+.elements-class:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.number {
+  position: relative;
+  top: -1.2rem;
+  left: 0.5rem;
+  font-size: x-small;
+}
+
+.symbol {
+  font-size: large;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
+.name {
+  font-size: 8px;
+  overflow: hidden;
+  text-align: center;
+    text-wrap: wrap;
+}
+
+.atomic-mass {
+  position: relative;
+  bottom: 2.6rem;
+  left: 2rem;
+  font-size: x-small;
+}
+
+// .element-image{
+//     width: 20vw;
+//     height: 20vh;
+// }
+
+// .card-container {
+// //   position: absolute;
+// //   top: 25%;
+// //   left: 35%;
+//   width: 100vw;
+//   height: 10vh;
+// //   background-color: rgba(190, 190, 190, 0.692);
+//   display: block;
+//   border-radius: 10px;
+//   display: none;
+//   color: rgb(0, 0, 0);
+//   font-size: x-large;
+//   font-weight: bold;
+//   text-align: center;
+//   padding: 2rem;
+// }
+
+// .card-container p {
+//   margin-top: 2rem;
+// }
+
+// .close {
+//   position: absolute;
+//   left: 95%;
+//   top: 1%;
+//   cursor: pointer;
+// }
+
+.element-props {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 3rem;
+}
+.search-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 5px;
+  padding: 1rem;
+}
+#search::placeholder {
+  text-align: start;
+  padding-left: 1rem;
+}
+
+.list-card{
+    width: 20vw;
+}
+
+@media (max-width: 2250px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1480px) {
+    .head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .periodic-table-container div {
+        border: 1px solid black;
+        cursor: pointer;
+        min-width: 1.5rem;
+      }
+  }
